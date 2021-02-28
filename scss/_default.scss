@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans';
+    background-color: $dark-blue-main-bg;
+    color: #fff;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 0 8px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+}
+
+.get-started {
+    background-color: $blue;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 1rem 5rem;
+    border-radius: 30px;
+}
+

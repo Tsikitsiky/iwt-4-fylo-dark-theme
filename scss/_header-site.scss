@@ -1,0 +1,26 @@
+.header-site {
+    background-color: $dark-blue-intro-email-sign-up-bg;
+    padding: 1rem 0;
+}
+
+.header-site__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        max-width: 100px;
+    }
+
+    ul {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        a {
+            color: #fff;
+            text-transform: capitalize;
+        }
+    }
+
+}
