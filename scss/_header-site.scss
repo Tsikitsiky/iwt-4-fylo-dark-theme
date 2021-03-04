@@ -17,9 +17,19 @@
         gap: 1rem;
         align-items: center;
 
+        @media (min-width: 800px) {
+            gap: 3rem
+        }
+
         a {
-            color: #fff;
+            color: rgba($color: #fff, $alpha: 0.6);
             text-transform: capitalize;
+        }
+
+        a:hover,
+        a:active {
+            color: #fff;
+            text-decoration: underline;
         }
     }
 

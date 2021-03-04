@@ -38,6 +38,11 @@ a {
     padding: 1rem;
     width: 100%;
     border-radius: 30px;
+
+    &:hover,
+    &:active {
+        background-color: hsl(198, 81%, 71%);
+    }
 }
 
 
@@ -46,5 +51,10 @@ a {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0;
+   }
+
+   .get-started {
+       max-width: fit-content;
+       padding: 1rem 5rem;
    }
 }
