@@ -1,0 +1,43 @@
+.section-testemonials__container {
+    padding-bottom: 50px;
+}
+
+.section-testemonials__list {
+    padding-top: 2rem;
+    background-image: image("bg-quotes.png");
+    background-repeat: no-repeat;
+    background-position: left 10px;
+    background-size: 2rem;
+    li {
+        max-width: 330px;
+        background-color: $dark-blue-testimonials-bg;
+        margin-bottom: 2rem;
+        padding: 2rem 1rem;
+
+        &>div {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+
+            img {
+                max-width: 60px;
+                border-radius: 50%;
+               
+            }
+        }
+    }
+
+    @media (min-width:600px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-size: 3rem;
+        padding-top: 3rem;
+
+        li {
+            max-width: 320px;
+        }
+    }
+}
+

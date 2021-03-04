@@ -1,0 +1,118 @@
+.footer-site {
+    font-size: 16px;
+    line-height: 24px;
+
+    a {
+        color: #fff;
+    }
+
+    .footer-site-text__wrapper {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        p {
+            padding-left: 2rem;
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .location {
+            background-position: top left;
+            background-image: image('icon-location.svg');
+        }
+
+        .phone_number {
+            background-image: image('icon-phone.svg');
+        }
+
+        .email {
+            background-image: image('icon-email.svg');
+        }
+    }
+
+    .site-map {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        li {
+            margin-bottom: 1rem;
+        }
+
+        li:nth-of-type(4) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .social-media {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+
+        li {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+        }
+
+        a {
+            display: block;
+            width: 16px;
+            height: 16px;
+        }
+
+        .icon {
+            background-repeat: no-repeat;
+            background-size: 16px;
+            background-position: center;
+        }
+
+        .icon-facebook {
+            background-image: image('icon-facebook.svg');
+        }
+
+        .icon-instagram {
+            background-image: image('icon-instagram.svg');
+        }
+
+        .icon-twitter {
+            background-image: image('icon-twitter.svg');
+        }
+    }
+}
+
+@media(min-width:1000px) {
+    .footer-site {
+        padding-top: 200px;
+        background-color: $dark-blue-footer-bg;
+
+        .footer-site-text__wrapper {
+            display: grid;
+            grid-template-columns: 1fr auto;
+        }
+
+        .contacts {
+            columns: 2;
+            gap: 3rem;
+        }
+
+        .links {
+            width: 430px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .site-map {
+            margin: 0;
+            columns: 2;
+            gap: 3rem;
+
+            li:nth-of-type(4) {
+                margin-bottom: 1rem;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,48 @@
+.section-advantages__container {
+    padding-bottom: 50px;
+    
+}
+
+.section-advantages__advantages--list {
+    li {
+        text-align: center;
+        padding-top: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70px;
+        font-size: 16px;
+        
+        h3 {
+            margin-bottom: 1rem;
+        }
+
+    }
+
+    .access {
+        background-image: image('icon-access-anywhere.svg');
+    }
+    .security {
+        background-image: image('icon-security.svg');
+    }
+    .collaboration {
+        background-image: image('icon-collaboration.svg');
+    }
+    .type-of-file {
+        background-image: image('icon-any-file.svg');
+    }
+}
+
+@media(min-width: 800px) {
+    .section-advantages__advantages--list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 16px;
+
+        li {
+            max-width: 420px;
+        }
+
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
